@@ -40,7 +40,7 @@
   margin: 20px 0 40px 0;
 }
 .slide-img {
-  margin: -60px 0 0 -88px;
+  margin: -60px 0 0 -100px;
 }
 .slide-btn {
   font-weight: 700;
