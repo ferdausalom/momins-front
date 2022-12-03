@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <h3 class="text-center text-secondary">Our Services</h3>
-        <p class="text-center text-secondary">
+        <p class="text-center text-secondary service-text">
           No templates, only exclusive solutions
         </p>
       </div>
@@ -36,5 +36,8 @@ import ServiceCard from "@/components/services/ServiceCard.vue";
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+}
+.service-text {
+  margin: 0 0 50px 0;
 }
 </style>
