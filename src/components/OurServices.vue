@@ -8,9 +8,25 @@
         </p>
       </div>
       <div class="row">
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+        <!-- Card items  -->
+        <ServiceCard
+          card-title="User Experience"
+          card-desc="We use strategic marketing tactics that have been proven to work."
+        >
+          <img src="../assets/images/home/icons/user-experience.png" alt="" />
+        </ServiceCard>
+        <ServiceCard
+          card-title="Web Design"
+          card-desc="Pork chop pork belly hamburger prosciutto, fatback andouille flank."
+        >
+          <img src="../assets/images/home/icons/web-design.png" alt="" />
+        </ServiceCard>
+        <ServiceCard
+          card-title="Web Development"
+          card-desc="Custom programming for most complex functions you can think."
+        >
+          <img src="../assets/images/home/icons/web-development.png" alt="" />
+        </ServiceCard>
       </div>
     </div>
   </div>

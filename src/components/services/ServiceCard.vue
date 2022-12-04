@@ -1,19 +1,27 @@
 <template>
-  <div class="col-md-4">
+  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
     <div class="card-area position-relative bg-light text-center">
       <div class="card-hover position-absolute"></div>
       <div
         class="card-icon m-auto d-flex align-items-center justify-content-center text-center"
       >
-        <img src="../../assets/images/home/icons/user-experience.png" alt="" />
+        <!-- Card image or icon  -->
+        <slot></slot>
       </div>
-      <h2 class="card-title">User Experience</h2>
+      <h2 class="card-title">{{ cardTitle }}</h2>
       <p class="card-desc">
-        We use strategic marketing tactics that have been proven to work.
+        {{ cardDesc }}
       </p>
     </div>
   </div>
 </template>
+
+<script setup>
+defineProps({
+  cardTitle: String,
+  cardDesc: String,
+});
+</script>
 
 <style>
 .card-area {
@@ -53,7 +61,6 @@
   opacity: 0;
   transition: opacity 0.9s ease-in-out, box-shadow 0.9s ease-in-out,
     transform 0.8s ease-in-out;
-  box-shadow: 11px 12px 1px -14px #cfcfcf;
 }
 .card-area:hover .card-hover {
   top: 17px;

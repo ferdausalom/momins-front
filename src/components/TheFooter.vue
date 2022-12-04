@@ -6,24 +6,18 @@
         <ul
           class="social py-4 d-flex align-items-center justify-content-center"
         >
-          <li>
-            <a href="http://"
-              ><Icon class="icon text-white" icon="ri:facebook-fill"
-            /></a>
-          </li>
-          <li class="px-4">
-            <a href=""><Icon class="icon text-white" icon="jam:twitter" /></a>
-          </li>
-          <li>
-            <a href="http://"
-              ><Icon class="icon text-white" icon="akar-icons:instagram-fill"
-            /></a>
-          </li>
-          <li class="px-4">
-            <a href="http://"
-              ><Icon class="icon text-white" icon="ri:linkedin-fill"
-            /></a>
-          </li>
+          <SocialLi social-link="http://">
+            <Icon class="icon text-white" icon="ri:facebook-fill" />
+          </SocialLi>
+          <SocialLi social-link="http://" class="px-4">
+            <Icon class="icon text-white" icon="jam:twitter" />
+          </SocialLi>
+          <SocialLi social-link="http://">
+            <Icon class="icon text-white" icon="akar-icons:instagram-fill" />
+          </SocialLi>
+          <SocialLi social-link="http://" class="px-4">
+            <Icon class="icon text-white" icon="ri:linkedin-fill" />
+          </SocialLi>
         </ul>
       </div>
     </div>
@@ -32,9 +26,10 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
+import SocialLi from "@/components/footer/SocialLi.vue";
 </script>
 
-<style scoped>
+<style>
 footer {
   background-color: #0f292d;
   border-top: 1px solid #6f6e6e;
