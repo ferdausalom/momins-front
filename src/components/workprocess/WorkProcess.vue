@@ -8,36 +8,73 @@
           alt=""
           class="process-img mx-auto position-absolute"
         />
-        <div class="row">
-          <div class="col-md-7">
-            <img
-              class="process-part-img"
-              src="../../assets/images/home/user-experience.png"
-              alt=""
-            />
-          </div>
-          <div class="col-md-5">
-            <div class="process-text-part">
-              <p
-                class="number bg-light text-center d-flex align-items-center justify-content-center"
-              >
-                <span>01</span>
-              </p>
-              <h4>User Experience</h4>
-              <p>
-                We define your competition and target audience. Discover what is
-                working in your online industry, then design your website
-                accordingly.
-              </p>
-            </div>
-          </div>
-        </div>
+        <WorkProcessStepLeftImg
+          step-number="1"
+          step-title="User Experience"
+          step-desc="We define your competition and target audience. Discover what is
+          working in your online industry, then design your website accordingly."
+        >
+          <img
+            class="process-part-img"
+            src="../../assets/images/home/user-experience.png"
+            alt=""
+          />
+        </WorkProcessStepLeftImg>
+        <div class="devider">&nbsp;</div>
+        <WorkProcessStepRightImg
+          step-number="2"
+          step-title="Web Design"
+          step-desc=" Color scheme, layout, sitemap, and style. We will bring your
+                brand to life with a one of a kind masterpiece, built just for
+                you"
+        >
+          <img
+            class="process-part-img"
+            src="../../assets/images/home/web-design.png"
+            alt=""
+          />
+        </WorkProcessStepRightImg>
+        <div class="devider">&nbsp;</div>
+        <WorkProcessStepLeftImg
+          step-number="3"
+          step-title="Web Development"
+          step-desc='We turn your ideas into a reality. &our website is placed on a "development server" where you get to watch the whole process, live.'
+        >
+          <img
+            class="process-part-img"
+            src="../../assets/images/home/web-development.png"
+            alt=""
+          />
+        </WorkProcessStepLeftImg>
+        <div class="devider">&nbsp;</div>
+        <WorkProcessStepRightImg
+          step-number="4"
+          step-title="Support"
+          step-desc="This is where you go live, to the world. Design, marketing, and maintenance; we'll be at your side for the life of your site."
+        >
+          <img
+            class="process-part-img"
+            src="../../assets/images/home/support.png"
+            alt=""
+          />
+        </WorkProcessStepRightImg>
       </div>
     </div>
   </div>
 </template>
 
+<script setup>
+import WorkProcessStepLeftImg from "@/components/workprocess/WorkProcessStepLeftImg.vue";
+import WorkProcessStepRightImg from "@/components/workprocess/WorkProcessStepRightImg.vue";
+</script>
+
 <style>
+.process {
+  padding: 0 85px;
+}
+.devider {
+  padding: 30px 0;
+}
 .work-process-title {
   font-family: "Playfair Display";
   font-style: normal;
@@ -48,40 +85,7 @@
 }
 .process-img {
   z-index: -1;
-  top: 198px;
-}
-.process-part-img {
-  border-radius: 100%;
-  border: 12px solid rgb(255, 255, 255);
-  outline: 10px solid #2bc2d7;
-}
-.process-text-part p {
-  font-size: 18px;
-  line-height: 28px;
-  color: #666666;
-}
-.process-text-part .number {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 74px;
-  width: 138px;
-  height: 138px;
-  border-radius: 100%;
-  border: 7px solid rgb(255, 255, 255);
-  outline: 5px solid #2bc2d7;
-  color: #666666;
-}
-.process-text-part .number span {
-  margin: -18px 0 0 0;
-}
-.process-text-part h4 {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 52px;
-  color: #000000;
-  margin: 12px 0;
+  top: 226px;
+  right: 235px;
 }
 </style>
